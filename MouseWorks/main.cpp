@@ -7,7 +7,7 @@
 using namespace std;
 using namespace cv;
 
-#define IMAGE_PATH          ("Resources/sample3.jpg")   //  путь к файлу: ../MouseWorks/MouseWorks/Resources/image.jpg
+#define IMAGE_PATH          ("Resources/sample1.jpg")   //  путь к файлу: ../MouseWorks/MouseWorks/Resources/image.jpg
 #define WINDOW_Y_SHIFT      (65)
 #define WINDOW_X_SHIFT      (0)
 #define SPEED               (1)                         //  Must be >= 1
