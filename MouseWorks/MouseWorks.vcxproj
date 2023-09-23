@@ -137,12 +137,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="callbacks.cpp" />
+    <ClCompile Include="get_point.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="user_data.cpp" />
+    <ClCompile Include="user_data_roi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\sample1.jpg" />
     <Image Include="Resources\sample2.jpg" />
     <Image Include="Resources\sample3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="callbacks.h" />
+    <ClInclude Include="get_point.h" />
+    <ClInclude Include="user_data.h" />
+    <ClInclude Include="user_data_roi.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
