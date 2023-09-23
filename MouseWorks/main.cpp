@@ -1,9 +1,7 @@
 ﻿#include "callbacks.h"
 
-//#include <iostream>
 #include <windows.h>
 
-#include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 
 using namespace cv;
@@ -18,7 +16,6 @@ int main() {
     char fullFilename[MAX_PATH];
     GetFullPathNameA(filename, MAX_PATH, fullFilename, nullptr);
 
-    //std::cout << "Image file path:\t" << fullFilename << std::endl << std::endl;
     Mat img = imread(fullFilename, IMREAD_COLOR);       //  считываем изображение из файла
 
     namedWindow("Source image", WINDOW_AUTOSIZE);
