@@ -71,6 +71,20 @@ void callBackFuncSource(int event, int x, int y, int flags, void* u_data) {
             Point top_left = get_top_left((*data).p_down, (*data).p_up);
             Point bottom_right = get_bottom_right((*data).p_down, (*data).p_up);
 
+            //  boundary conditions:
+            if (top_left.x < 0) {
+                top_left.x = 0;
+            }
+            if (top_left.y < 0) {
+                top_left.y = 0;
+            }
+            if (bottom_right.x > (*data).img.cols) {
+                bottom_right.x = (*data).img.cols;
+            }
+            if (bottom_right.y > (*data).img.rows) {
+                bottom_right.y = (*data).img.rows;
+            }
+
             Mat roi((*data).img, Rect(top_left, bottom_right));
             namedWindow("ROI", WINDOW_AUTOSIZE);
             imshow("ROI", roi);

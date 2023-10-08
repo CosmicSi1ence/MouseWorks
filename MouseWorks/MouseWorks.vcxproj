@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="callbacks.h" />
     <ClInclude Include="get_point.h" />
+    <ClInclude Include="INIReader.h" />
     <ClInclude Include="user_data.h" />
     <ClInclude Include="user_data_roi.h" />
   </ItemGroup>
